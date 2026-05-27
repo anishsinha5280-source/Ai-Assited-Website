@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinematic Space Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Colourful Background Planets -->
+    <div class="bg-planet bg-planet-1"></div>
+    <div class="bg-planet bg-planet-2"></div>
+    <div class="bg-planet bg-planet-3"></div>
+
+    <div id="progress-bar"></div>
+    <div id="coords" class="coordinates">LAT: 00.0000<br>LNG: 00.0000</div>
+
+    <section id="hero">
+        <h1>The Void Awakens</h1>
+        <p>A cinematic journey through deep space</p>
+        <button class="cta-btn">Initiate Sequence</button>
+    </section>
+
+    <section id="mission">
+        <div id="mission-container">
+            <p id="typewriter"></p>
+        </div>
+    </section>
+
+    <section id="planets">
+        <h2 class="section-title">Solar System Map</h2>
+        <div id="solar-system">
+            <!-- Background Nebula Elements -->
+            <div class="nebula-bg"></div>
+
+            <div class="solar-system-inner">
+                <!-- The Massive Sun -->
+                <div class="sun"></div>
+                
+                <!-- Asteroid Belt -->
+                <div class="asteroid-belt">
+                    <!-- Random foreground asteroids -->
+                    <div class="map-asteroid ast-1"></div>
+                    <div class="map-asteroid ast-2"></div>
+                    <div class="map-asteroid ast-3"></div>
+                    <div class="map-asteroid ast-4"></div>
+                    <div class="map-asteroid ast-5"></div>
+                    <div class="map-asteroid ast-6"></div>
+                    <div class="map-asteroid ast-7"></div>
+                    <div class="map-asteroid ast-8"></div>
+                </div>
+
+                <!-- Decorative Orbit Arcs -->
+                <div class="orbit-arc arc-1"></div>
+                <div class="orbit-arc arc-2"></div>
+                <div class="orbit-arc arc-3"></div>
+                <div class="orbit-arc arc-4"></div>
+                <div class="orbit-arc arc-5"></div>
+                <div class="orbit-arc arc-6"></div>
+                <div class="orbit-arc arc-7"></div>
+                <div class="orbit-arc arc-8"></div>
+
+                <!-- Planets (Data attributes remain the same) -->
+                <div class="system-planet sys-planet-1" data-title="Mercury" data-info="The smallest and fastest planet."></div>
+                <div class="system-planet sys-planet-2" data-title="Venus" data-info="A thick, toxic atmosphere traps heat."></div>
+                <div class="system-planet sys-planet-3" data-title="Earth" data-info="Our home planet, harboring life."></div>
+                <div class="system-planet sys-planet-4" data-title="Mars" data-info="The Red Planet, home to Olympus Mons."></div>
+                <div class="system-planet sys-planet-5" data-title="Jupiter" data-info="A massive gas giant with fierce storms."></div>
+                <div class="system-planet sys-planet-6" data-title="Saturn" data-info="Adorned with a dazzling system of rings."></div>
+                <div class="system-planet sys-planet-7" data-title="Uranus" data-info="An ice giant that rotates on its side."></div>
+                <div class="system-planet sys-planet-8" data-title="Neptune" data-info="A dark, incredibly windy ice giant."></div>
+            </div>
+
+            <!-- Corner Space Images -->
+            <div class="corner-deco top-right"></div>
+            <div class="corner-deco bottom-left"></div>
+
+        </div>
+        <div id="planet-info-panel" class="hidden">
+            <button id="close-panel">&times;</button>
+            <h3 id="panel-title">Planet Name</h3>
+            <p id="panel-desc">Planet Description</p>
+        </div>
+    </section>
+
+    <section id="timeline">
+        <h2 class="section-title">The Grand Archives</h2>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            
+            <div class="timeline-event left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">13.8 Billion Years Ago</span>
+                    <h3>The Big Bang</h3>
+                    <p>From an infinitely dense singularity, the universe rapidly expanded. Space, time, and all matter burst into existence in a brilliant flash of primordial energy.</p>
+                </div>
+            </div>
+
+            <div class="timeline-event right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">4.6 Billion Years Ago</span>
+                    <h3>Solar System Ignition</h3>
+                    <p>A massive cloud of gas and dust collapsed under its own gravity, forming our Sun. The leftover material flattened into a disk, eventually clumping together to form the planets, including our home, Earth.</p>
+                </div>
+            </div>
+
+            <div class="timeline-event left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Year 2026</span>
+                    <h3>The Golden Age of Discovery</h3>
+                    <p>Humanity mastered deep space propulsion and launched massive observation arrays. It was an era of unprecedented unity and exploration, expanding our reach beyond the asteroid belt.</p>
+                </div>
+            </div>
+
+            <div class="timeline-event right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content warning">
+                    <span class="timeline-date">Year 2142</span>
+                    <h3>Launch of the Aethelgard</h3>
+                    <p>The pride of Earth's fleet, the Aethelgard space cruiser, launched on a classified mission to the edge of the Oort Cloud, carrying 5,000 souls into the unknown.</p>
+                </div>
+            </div>
+
+            <div class="timeline-event left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content danger">
+                    <span class="timeline-date">Year 2145</span>
+                    <h3>The Anomaly</h3>
+                    <p><strong>[LOG 42-A]</strong> Command systems failing. A massive gravitational anomaly opened off the port bow. <em>"It's pulling us in! All engines reverse—"</em></p>
+                </div>
+            </div>
+
+            <div class="timeline-event right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content static">
+                    <span class="timeline-date">Year ???</span>
+                    <h3>Final Transmission</h3>
+                    <p><em>"...can anyone hear us? The stars are wrong here. They are singing. If anyone finds this beacon, do not follow us. Do not—"</em></p>
+                    <div class="transmission-glitch">SIGNAL LOST</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Asteroid Defense</h2>
+        <div class="skills-container" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4rem;">
+            
+            <div class="game-container" style="flex: 1; min-width: 300px; max-width: 800px;">
+                <div class="game-header">
+                    <span>ASTEROID DEFENSE</span>
+                    <span id="score">SCORE: 0</span>
+                </div>
+                <canvas id="game-canvas"></canvas>
+                <div class="game-footer">
+                    <button id="start-game-btn">LAUNCH GAME</button>
+                    <div id="acquired-skills">ACQUIRED: </div>
+                </div>
+            </div>
+
+            <!-- Pic Corner Collage -->
+            <div class="pic-corner-collage" style="position: relative; right: auto; bottom: auto; margin-right: 2rem;">
+                <img src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=400&q=80" class="collage-pic pic-1" alt="Composite Earth">
+                <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=400&q=80" class="collage-pic pic-2" alt="Whirlpool Galaxy">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&q=80" class="collage-pic pic-3" alt="Nebula">
+                <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=400&q=80" class="collage-pic pic-4" alt="Galaxy">
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="site-footer">
+        <p>Designed & Built by <strong>Anish Sinha</strong></p>
+        <p class="footer-subtext">Cinematic Space Portfolio</p>
+    </footer>
+
+    <!-- Audio Player -->
+    <div id="audio-player">
+        <audio id="bg-audio" loop preload="none">
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+        </audio>
+        <button id="play-pause-btn">
+            <span class="icon">▶</span>
+        </button>
+        <div class="audio-info">
+            <span class="track-name">Epic Cinematic Space (Hans Zimmer Style)</span>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <!-- Image Lightbox Modal -->
+    <div id="lightbox-modal" class="hidden">
+        <span id="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Enlarged view">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <script src="canvas-stars.js"></script>
+    <script src="asteroid-game.js"></script>
+    <script src="spaceship.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
